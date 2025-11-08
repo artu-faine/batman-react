@@ -1,13 +1,13 @@
 import React from 'react'
 import '../../components/styles.css'
 
-function Home(props){
+function Ingressos(props){
 
     return (
         <div>
-            Home
+            Ingressos
         </div>
     )
 }
 
-export default Home
+export default Ingressos

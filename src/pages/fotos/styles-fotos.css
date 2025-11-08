@@ -1,0 +1,49 @@
+.pics-container {
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;   
+
+    /* box-sizing: inherit; */
+    /* height: 500px; */
+}
+
+.pic {
+    background-color: grey;
+    background-size: cover;
+    /* width: 35%; */
+    height: 500px;
+    border-radius: 3%;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    font-size: 17px;
+}
+
+.pic:hover {
+    transform: scale(1.02);
+}
+
+.character-1 {
+    background-image: url('../../assets/clown-7714876_1280.jpg');
+}
+
+.character-2 {
+    background-image: url('../../assets/relationship-7853278_1280.jpg');
+}
+
+.character-3 {
+    background-image: url('../../assets/ai-generated-8602507_1280.jpg');
+}
+
+.character-4 {
+    background-image: url('../../assets/arlequina.jpg');
+}

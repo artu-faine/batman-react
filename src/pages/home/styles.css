@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+#banner {
+    background-image: url('../../assets/pexels-picography-6633.jpg');
+    background-position: 50% 60%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #000; 
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+     width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+video {
+    height: 70%;
+}
+
+@media (max-width: 700px) {
+
+    #trailer-container {
+        flex-direction: column;
+        height: auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .description {
+        width: 100%;
+        /* margin-left: 0; */
+    }
+
+    #sinopse {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .trailer {
+        width: 100%;
+        height: 200px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    #banner {
+        background-position: 50% 130%;
+        background-size: 240%;
+    }
+}

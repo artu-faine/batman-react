@@ -1,0 +1,56 @@
+.actor-cards-container {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    /* background-position: 50% 50%; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url(https://portalpopline.com.br/wp-content/uploads/2023/02/batman-capa.jpg);
+    background-position: 50% 50%;
+}
+.banner-2 {
+    background-image: url(https://s2.glbimg.com/lJEJ_rnqoTSiKQ542pPpVphEgOM=/e.glbimg.com/og/ed/f/original/2021/12/31/zoe_kravitz_catwoman.jpeg);
+    background-position: 35% 50%;
+}
+
+@media (max-width: 700px) {
+    .cards-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        /* margin: 0 20px; */
+    }
+}

@@ -1,0 +1,19 @@
+.comments-container {
+    height: 100vh;
+    /* background-color: grey; */
+    padding: 20px;
+    /* row-gap: 20px; */
+}
+
+.comment {
+    margin: 20px 0px;
+    background-color: gray;
+    border-radius: 10px;
+    transition: .8s;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.comment:hover {
+    transform: scale(1.02);
+}

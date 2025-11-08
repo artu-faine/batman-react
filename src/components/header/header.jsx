@@ -1,20 +1,34 @@
-import React, { useContext } from 'react'
-import '../styles.css'
-import { UserContext } from '../../contexts/usercontext';
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import '../styles.css';
+// import Logo from '../../assets/png-transparent-batman-logo-sticker-batman-logo-comics-emblem-superhero-thumbnail.png';
+import Logo from '../../assets/batmanlogo.jpg';
+
 
 function Header(){
 
-    const {login, setLogin} = useContext(UserContext);
+    const navigate = useNavigate();
 
     return (
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>Nome</li>
-                <li>Contatos</li>
-                <li onClick={() => setLogin(!login)}>{login ? 'Deslogar' : 'Login'}</li>
-            </ul>
-        </div>
+        <header>
+            <img className='logo' src={Logo}/>
+            <nav>
+                <ul>
+                    <Link style={{ textDecoration: 'none' }} to='/'>
+                        <li>Home</li>
+                    </Link>
+                    <Link style={{ textDecoration: 'none' }} to='/contato'>
+                        <li>Contato</li>
+                    </Link>
+                    <Link style={{ textDecoration: 'none' }} to='/fotos'>
+                        <li>Fotos</li>
+                    </Link>
+                    <Link style={{ textDecoration: 'none' }} to='/comentarios'>
+                        <li>Comentários</li>
+                    </Link>
+                </ul>
+            </nav>
+        </header>
     )
 }
 
