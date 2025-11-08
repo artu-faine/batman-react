@@ -5,7 +5,7 @@ import Home from './pages/home/index'
 import './App.css'
 import Header from './components/header/header'
 import Profile from './components/profile/profile'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import Contato from './pages/contato/contato'
 import Fotos from './pages/fotos/fotos'
 import Ingressos from './pages/ingressos/ingressos'
@@ -15,14 +15,19 @@ import Footer from './components/footer/footer'
 
 function App() {
 
+  // const navigate = useNavigate();
+
+  // navigate("/");
+
   return (
     <>
       {/* <Teste></Teste> */}
       {/* <Profile/> */}
       <BrowserRouter>
         <Header/>
+        {/* <Home></Home> */}
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
+          <Route path='/batman-react' element={<Home/>}></Route>
           <Route path='/contato' element={<Contato/>}></Route>
           <Route path='/fotos' element={<Fotos/>}></Route>
           <Route path='/ingressos' element={<Ingressos/>}></Route>
