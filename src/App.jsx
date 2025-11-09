@@ -5,7 +5,7 @@ import Home from './pages/home/index'
 import './App.css'
 import Header from './components/header/header'
 import Profile from './components/profile/profile'
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate, HashRouter } from 'react-router-dom';
 import Contato from './pages/contato/contato'
 import Fotos from './pages/fotos/fotos'
 import Ingressos from './pages/ingressos/ingressos'
@@ -23,7 +23,7 @@ function App() {
     <>
       {/* <Teste></Teste> */}
       {/* <Profile/> */}
-      <BrowserRouter>
+      <HashRouter>
         <Header/>
         {/* <Home></Home> */}
         <Routes>
@@ -35,7 +35,7 @@ function App() {
           <Route path='/comentarios' element={<Comentarios/>}></Route>
         </Routes>
         <Footer/>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 
