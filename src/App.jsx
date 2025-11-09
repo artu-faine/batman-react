@@ -27,7 +27,7 @@ function App() {
         <Header/>
         {/* <Home></Home> */}
         <Routes>
-          <Route path='/batman-react' element={<Home/>}></Route>
+          <Route path='/' element={<Home/>}></Route>
           <Route path='/contato' element={<Contato/>}></Route>
           <Route path='/fotos' element={<Fotos/>}></Route>
           <Route path='/ingressos' element={<Ingressos/>}></Route>
